@@ -78,6 +78,14 @@
   color: white;
 }
 
+/* Add this to your CSS file */
+.meeting-image-container {
+  display: flex;
+  justify-content: center;  /* Centers the image horizontally */
+  align-items: center;      /* Centers the image vertically if needed */
+}
+
+
 /* =============================== */
 
 @layer utilities {
