@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Climp",
   description: "Video Calling Application",
   icons:{
-    icon: '/icons/logo.svg'
+    icon: '/icons/logoclimp.svg'
   }
 };
 

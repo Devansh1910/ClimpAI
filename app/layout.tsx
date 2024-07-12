@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Climp",
   description: "Video Calling Application",
   icons:{
-    icon: '/icons/logo.svg'
+    icon: '/icons/logoclimp.svg'
   }
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({
       <ClerkProvider
         appearance={{
           layout:{
-            logoImageUrl: '/icons/yoom-logo.svg',
+            logoImageUrl: '/icons/climplogo.svg',
             socialButtonsVariant: 'iconButton'
           },
           variables: {
