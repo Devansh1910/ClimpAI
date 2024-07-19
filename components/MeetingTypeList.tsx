@@ -105,9 +105,6 @@ const MeetingTypeList = () => {
         handleClick={() => setMeetingState("isJoiningMeeting")}
         className="bg-yellow-500"
       />
-
-        <CallList type="upcoming" />
-
       {!callDetails ? (
         <MeetingModel
           isOpen={meetingState === "isScheduleMeeting"}
