@@ -11,6 +11,7 @@ import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk";
 import { Textarea } from "@/components/ui/textarea";
 import ReactDatePicker from "react-datepicker";
 import { Input } from "./ui/input";
+import CallList from "./CallList";
 
 const MeetingTypeList = () => {
   const router = useRouter();
@@ -104,6 +105,10 @@ const MeetingTypeList = () => {
         handleClick={() => setMeetingState("isJoiningMeeting")}
         className="bg-yellow-500"
       />
+      <section className="flex size-full flex-col gap-10 text-white">
+        <h1 className="text-3xl font-bold">Upcoming</h1>
+        <CallList type="upcoming" />
+      </section>
 
       {!callDetails ? (
         <MeetingModel
@@ -165,7 +170,6 @@ const MeetingTypeList = () => {
         buttonText="Start Meeting"
         handleClick={createMeeting}
       />
-
       <MeetingModel
         isOpen={meetingState === "isJoiningMeeting"}
         onClose={() => setMeetingState(undefined)}
